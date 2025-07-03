@@ -37,3 +37,8 @@ function evenOrOdd(number) {
 
 [Real estate website project using HTML and CSS](https://konstantin-15.github.io/project_3/)
 ---
+### **EDUCATION**
+* Electronics College (Software for Automated Systems and Computer Engineering)
+  
+---
+**English Language (Beginner Level A1)**
