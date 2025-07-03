@@ -14,4 +14,12 @@
     Given my passion for working with software, I have established a clear objective to become a frontend developer. To pursue this ambition, I dedicate my free time to studying relevant literature and video materials.
     
 ---
-
+### **SKILLS**
+* HTML / CSS
+* BEM Methodology
+* SCSS Preprocessor
+* JavaScript (basics)
+* Git
+* Figma (for web development)
+* VSCode
+---
