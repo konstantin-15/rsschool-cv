@@ -123,3 +123,60 @@ body {
 
 /* ========================================== */
 
+.main__block-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.section {
+    margin-bottom: 30px;
+    min-width: 30%;
+}
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.contacts__item {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+.contacts__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 5px;
+    left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid wheat;
+}
+.contacts__link {
+    color: #000000;
+    cursor: pointer;
+}
+
+/* ========================================== */
+
+.skills__item {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+.skills__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 5px;
+    left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid wheat;
+}
+
+/* ========================================== */
