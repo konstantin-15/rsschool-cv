@@ -180,3 +180,43 @@ body {
 }
 
 /* ========================================== */
+
+.example {
+    padding-bottom: 20px;
+}
+.example__description {
+    margin-bottom: 20px;
+}
+.example__code {
+    display: flex;
+    justify-content: center;
+}
+.pre {
+    background-color: rgb(245, 245, 240);
+    border-radius: 10px;
+}
+.example__pre {
+    margin-bottom: 20px;
+}
+.example__project-title {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.example__link {
+    color: #000;
+    cursor: pointer;
+}
+.example__imgage {
+    margin: 0 auto;
+    max-width: 700px;
+}
+.example__img {
+    max-width: 100%;
+}
+
+/* ========================================== */
+
+
+
+/* ========================================== */
