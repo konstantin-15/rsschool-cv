@@ -113,3 +113,13 @@ body {
 
 /* =========================================== */
 
+.main__about {
+    margin-bottom: 50px;
+}
+.about__text {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* ========================================== */
+
