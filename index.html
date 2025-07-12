@@ -3,9 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=4rzOerPFTcOo&format=png&color=000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>CV</title>
 </head>
 <body>
-    <img src="img/web-programmer.png" alt="Avatar" width="320" height="280">
+    <header class="header">
+        <div class="header__container">
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#section-about" class="menu__link">About me</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#section-contacts" class="menu__link">Contacts</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#section-skills" class="menu__link">Skills</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#section-example" class="menu__link">Code example</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#section-education" class="menu__link">Education</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#section-languages" class="menu__link">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__image">
+                <img src="img/web-programmer.png" alt="photo" class="header__photo">
+            </div>
+            <h1 class="header__title">
+                Konstantin Gusev
+            </h1>
+            <p class="header__descr">
+                Frontend Developer
+            </p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <section class="about main__about" id="section-about">
+                <h2 class="about__title title">about me</h2>
+                <div class="about__content">
+                    <p class="about__text">
+                        During my professional activities as a system administrator, I encounter tasks such as commissioning and configuring organizational computing equipment, setting up various software solutions, and maintaining computer networks. These duties necessitate continuous learning through studying new literature, technical documentation for emerging technologies, and conducting online research to find relevant information.
+                    </p>
+                    <p class="about__text">
+                        Given my passion for working with software, I have established a clear objective to become a frontend developer. To pursue this ambition, I dedicate my free time to studying relevant literature and video materials.
+                    </p>
+                </div>
+            </section>
+
+            <div class="main__block-flex">
+                <section class="contacts section" id="section-contacts">
+                    <h2 class="contacts__title title">contacts</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <b>Phone:</b> +7 (123) 555-00-00
+                        </li>
+                        <li class="contacts__item">
+                            <b>Email:</b> Konstantin@gmail.com
+                        </li>
+                        <li class="contacts__item">
+                            <b>GitHub:</b> Konstantin-15
+                        </li>
+                        <li class="contacts__item">
+                            <b>Telegram:</b> @GK_Vlad
+                        </li>
+                        <li class="contacts__item">
+                            <b>Discord:</b> _Konstantin_83
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="skills section" id="section-skills">
+                    <h2 class="skills__title title">skills</h2>
+                    <ul class="skills__list">
+                        <li class="skills__item">HTML / CSS</li>
+                        <li class="skills__item">BEM Methodology</li>
+                        <li class="skills__item">SCSS Preprocessor</li>
+                        <li class="skills__item">JavaScript (basics)</li>
+                        <li class="skills__item">Git</li>
+                        <li class="skills__item">Figma (for web development)</li>
+                        <li class="skills__item">VSCode</li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="example" id="section-example">
+                <h2 class="example__title title">code example</h2>
+                <div class="example__body">
+                    <div class="example__description">
+                        <b style="display: inline-block">Task from CODEWARS:</b> <span>Create a function that takes an integer as an argument and returns “Even” for even numbers or “Odd” for odd numbers.</span>
+                    </div>
+                        <pre class="pre example__pre">
+                            <code class="example__code">
+function evenOrOdd(number) {
+    if (number % 2 === 0) {
+        return "Even";
+        } else {
+        return "Odd";
+    }
+}
+                            </code>
+                        </pre>
+                    <h3 class="example__project-title">
+                        Real estate website project using HTML and CSS
+                    </h3>
+                    <a href="https://konstantin-15.github.io/project_3/" class="example__link" target="_blank">
+                        <div class="example__imgage">
+                        <img src="img/example_img.png" alt="Photo" class="example__img">
+                    </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="education" id="section-education">
+                <h2 class="education__title title">education</h2>
+                <ul class="education__list">
+                    <li class="education__item">
+                        Electronics College (Software for Automated Systems and Computer Engineering)
+                    </li>
+                </ul>
+            </section>
+
+            <section class="languages" id="section-languages">
+                <h2 class="languages__title title">languages</h2>
+                <ul class="languages__list">
+                    <li class="languages__item">
+                        Russian - Native
+                    </li>
+                    <li class="languages__item">
+                        English - Beginner Level A1
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="https://github.com/konstantin-15" class="github-link" target="_blank">GitHub</a>
+            <p class="footer__year">2025</p>
+            <a href="https://rs.school/courses/javascript-ru" class="rs-link" target="_blank">
+                <img src="img/rs-school-logo.svg" alt="RS School" class="rs-logo">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

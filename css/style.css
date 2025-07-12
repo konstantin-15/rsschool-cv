@@ -1,8 +1,364 @@
 *,
-*::before,
-*::after {
+* ::before,
+* ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
 }
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+}
+html {
+    font-size: 20px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+}
+[class*= "__container"] {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* ==================================== */
+
+.header {
+    padding: 0 0 40px;
+}
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 14px 0 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: wheat;
+}
+.header__menu {
+    width: 100%;
+}
+.menu__list {
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+.menu__link {
+    color: black;
+    padding: 13px;
+    transition: all 0.3s ease;
+}
+.menu__link:hover {
+    background-color: #000000;
+    color: white;
+}
+.header__image {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: wheat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.header__photo {
+    max-width: 150px;
+}
+.header__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.header__descr {
+    font-size: 24px;
+}
+
+/* =========================================== */
+
+.main__about {
+    margin-bottom: 50px;
+}
+.about__text {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* ========================================== */
+
+.main__block-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.section {
+    margin-bottom: 30px;
+    min-width: 30%;
+}
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.contacts__item {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+.contacts__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 5px;
+    left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid wheat;
+}
+.contacts__link {
+    color: #000000;
+    cursor: pointer;
+}
+
+/* ========================================== */
+
+.skills__item {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+.skills__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 5px;
+    left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid wheat;
+}
+
+/* ========================================== */
+
+.example {
+    padding-bottom: 20px;
+}
+.example__description {
+    margin-bottom: 20px;
+}
+.example__code {
+    display: flex;
+    justify-content: center;
+}
+.pre {
+    background-color: rgb(245, 245, 240);
+    border-radius: 10px;
+}
+.example__pre {
+    margin-bottom: 20px;
+}
+.example__project-title {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.example__link {
+    color: #000;
+    cursor: pointer;
+}
+.example__imgage {
+    margin: 0 auto;
+    max-width: 700px;
+}
+.example__img {
+    max-width: 100%;
+}
+
+/* ========================================== */
+
+.education {
+    padding-bottom: 20px;
+}
+.education__item {
+    position: relative;
+    padding-left: 30px;
+}
+.education__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 5px;
+    left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid wheat;
+}
+
+/* ========================================== */
+
+.languages__item {
+    position: relative;
+    padding: 10px 0 10px 30px;
+    line-height: 1.2;
+}
+.languages__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 15px;
+    left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid wheat;
+}
+
+/* ========================================== */
+
+.footer__container {
+    height: 40px;
+    background-color: wheat;
+    align-items: center;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+.github-link {
+    color: #000;
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+}
+.github-link::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/github-mark.svg') no-repeat center/cover;
+}
+.rs-link {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    cursor: pointer;
+}
+.rs-logo {
+    max-width: 100%;
+}
+
+/* ========================================== */
+
+@media (max-width: 768px) {
+    [class*= "__container"] {
+        padding: 0 20px;
+    }
+    .menu__item {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu__link {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .languages__list {
+        margin-bottom: 20px;
+    }
+    .languages__item {
+        padding: 5px 0 5px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 18px;
+        font-weight: 400;
+        scroll-behavior: smooth;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .header__title {
+        font-size: 38px;
+        line-height: 1;
+    }
+    .header__descr {
+        font-size: 20px;
+    }
+    .menu__item {
+        width: 100%;
+    }
+    .menu__link {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .contacts__list {
+        font-size: 16px;
+    }
+    .main__block-flex {
+        gap: 0;
+    }
+    .skills__list {
+        font-size: 16px;
+    }
+    .example__description {
+        margin-bottom: 0;
+        text-align: justify;
+    }
+    .footer__container {
+    padding: 5px 10px;
+    }
+    .footer__year {
+        font-size: 16px;
+    }
+    .rs-logo {
+        max-width: 80%;
+    }
+}
+
+/* ========================================== */
