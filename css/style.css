@@ -217,6 +217,27 @@ body {
 
 /* ========================================== */
 
+.education {
+    padding-bottom: 20px;
+}
+.education__item {
+    position: relative;
+    padding-left: 30px;
+}
+.education__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 5px;
+    left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid wheat;
+}
+
+/* ========================================== */
+
 
 
 /* ========================================== */
