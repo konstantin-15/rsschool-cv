@@ -293,6 +293,72 @@ body {
 
 /* ========================================== */
 
+@media (max-width: 768px) {
+    [class*= "__container"] {
+        padding: 0 20px;
+    }
+    .menu__item {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu__link {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .languages__list {
+        margin-bottom: 20px;
+    }
+    .languages__item {
+        padding: 5px 0 5px 30px;
+    }
+}
 
+@media (max-width: 480px) {
+    html {
+        font-size: 18px;
+        font-weight: 400;
+        scroll-behavior: smooth;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .header__title {
+        font-size: 38px;
+        line-height: 1;
+    }
+    .header__descr {
+        font-size: 20px;
+    }
+    .menu__item {
+        width: 100%;
+    }
+    .menu__link {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .contacts__list {
+        font-size: 16px;
+    }
+    .main__block-flex {
+        gap: 0;
+    }
+    .skills__list {
+        font-size: 16px;
+    }
+    .example__description {
+        margin-bottom: 0;
+        text-align: justify;
+    }
+    .footer__container {
+    padding: 5px 10px;
+    }
+    .footer__year {
+        font-size: 16px;
+    }
+    .rs-logo {
+        max-width: 80%;
+    }
+}
 
 /* ========================================== */
