@@ -238,6 +238,61 @@ body {
 
 /* ========================================== */
 
+.languages__item {
+    position: relative;
+    padding: 10px 0 10px 30px;
+    line-height: 1.2;
+}
+.languages__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 15px;
+    left: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 15px solid wheat;
+}
+
+/* ========================================== */
+
+.footer__container {
+    height: 40px;
+    background-color: wheat;
+    align-items: center;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+.github-link {
+    color: #000;
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+}
+.github-link::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/github-mark.svg') no-repeat center/cover;
+}
+.rs-link {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    cursor: pointer;
+}
+.rs-logo {
+    max-width: 100%;
+}
+
+/* ========================================== */
+
 
 
 /* ========================================== */
